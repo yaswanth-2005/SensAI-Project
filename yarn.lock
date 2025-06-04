@@ -3915,7 +3915,7 @@ inline-style-parser@0.2.4:
   resolved "https://registry.yarnpkg.com/inline-style-parser/-/inline-style-parser-0.2.4.tgz#f4af5fe72e612839fcd453d989a586566d695f22"
   integrity sha512-0aO8FkhNZlj/ZIbNi7Lxxr12obT7cL1moPfE4tg1LkX7LlLfC6DeX4l2ZEud1ukP9jNQyNnfzQVqwbwmAATY4Q==
 
-inngest@^3.29.3:
+inngest@^3.38.0:
   version "3.38.0"
   resolved "https://registry.yarnpkg.com/inngest/-/inngest-3.38.0.tgz#82993311486e6db3588d19304ab6d62c19b8cde8"
   integrity sha512-0Uy9YxhXGkhjMShJXVuda5sgRqSCsvrE6S8+2s/q0a94g8ZNWk7c2TbhFbRc/qXTZpH9cn/2n+B1s0LME/oSMw==
