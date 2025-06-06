@@ -92,14 +92,6 @@ const OnboardingForm = ({ industries }) => {
             <div className="space-y-2">
               <Label htmlFor="industry">Industry</Label>
               <Select
-                // onValueChange={(value) => {
-                //   setValue("industry", value);
-                //   setSelectedIndustry(
-                //     industries.find((ind) => ind.id === value)
-                //   );
-                //   setValue("subIndustry", "");
-                // }}
-
                 onValueChange={(value) => {
                   setValue("industry", value);
                   setSelectedIndustry(
