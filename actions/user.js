@@ -26,7 +26,7 @@ export async function updateUser(data) {
           },
         });
 
-        // If industry doesn't exist, create it with default values
+        // If industry doesn't exist, create it with default values and store in database.
         if (!industryInsight) {
           const insights = await generateAIInsights(data.industry);
 
