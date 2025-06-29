@@ -64,5 +64,21 @@ export async function getIndustryInsights() {
     return industryInsight;
   }
 
+  // Check if nextUpdate date has passed, regenerate insights if needed
+  if (user.industryInsight.nextUpdate < new Date()) {
+    const insights = await generateAIInsights(user.industry);
+
+    const updatedInsight = await db.industryInsight.update({
+      where: { id: user.industryInsight.id },
+      data: {
+        ...insights,
+        lastUpdated: new Date(),
+        nextUpdate: new Date(Date.now() + 7 * 24 * 60 * 60 * 1000),
+      },
+    });
+
+    return updatedInsight;
+  }
+
   return user.industryInsight;
 }
